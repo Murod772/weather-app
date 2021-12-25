@@ -6,7 +6,112 @@
     <title>Name Project</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div class="bg-image day">
+      <div id="app">
+        <div class="header">
+          <div class="logo-container">
+            <img class="logo" src="./images/logo.png" alt="logo" />
+            <div class="logo-text">Weather Smether</div>
+          </div>
+          <form class="form">
+            <input type="text" id="input" placeholder="Enter city or zipcode" />
+            <button class="search" type="submit">Search</button>
+          </form>
+          <div>
+            <button class="btn">
+              <div class="celsius">°C</div>
+              <div class="fahrenheit deactivated">°F</div>
+            </button>
+          </div>
+        </div>
+
+        <div class="today-container">
+          <div class="current-temp">
+            <div class="location" id="city"></div>
+            <div class="weather" id="condition-text"></div>
+            <div class="temp" id="temp"></div>
+            <div class="max-min-temp">
+              <div class="max-temp">H:5°</div>
+              <div class="min-temp">L:-1°</div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="todays-forecast" id="todays-forecast">
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="details-container">
+          <div class="top-details">
+            <div class="sunrise details-item">
+              <div class="main-text">Sunrise</div>
+              <div id="sunrise">6:00</div>
+            </div>
+            <div class="sunset details-item">
+              <div class="main-text">Sunset</div>
+              <div id="sunset">18:00</div>
+            </div>
+            <div class="chance-rain details-item">
+              <div class="main-text">Chance of rain</div>
+              <div id="chance-rain">10%</div>
+            </div>
+            <div class="chance-snow details-item">
+              <div class="main-text">Chance Of Snow</div>
+              <div id="chance-snow"></div>
+            </div>
+            <div class="wind details-item">
+              <div class="main-text">Wind</div>
+              <div id="wind">10km/h</div>
+            </div>
+          </div>
+          <div class="bottom-details">
+            <div class="humidity details-item">
+              <div class="main-text">Humidity</div>
+              <div id="humidity">10%</div>
+            </div>
+            <div class="feels-like details-item">
+              <div class="main-text">Feels like</div>
+              <div id="feels-like">5°</div>
+            </div>
+            <div class="uv-index details-item">
+              <div class="main-text">UV Index</div>
+              <div id="uv-index">0.39</div>
+            </div>
+            <div class="visibility details-item">
+              <div class="main-text">Visibility</div>
+              <div id="visibility">10km</div>
+            </div>
+
+            <div class="cloud-cover details-item">
+              <div class="main-text">Cloud cover</div>
+              <div id="cloud-cover">10%</div>
+            </div>
+          </div>
+        </div>
+        <div class="forecast-container">
+          <table id="table">
+            <tr>
+              <th>Date</th>
+              <th></th>
+              <th>Temperature</th>
+              <th>Chance of Rain</th>
+              <th>Humidity</th>
+            </tr>
+            <tr>
+              <td id="forecast-day">Thursday</td>
+              <td id="forecast-icon">Icon</td>
+              <td id="forecast-temp">5°</td>
+              <td id="forecast-chance-rain">10%</td>
+              <td id="forecast-humidity">10%</td>
+            </tr>
+          </table>
+        </div>
+        <div class="footer-container">
+  
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js" defer></script>
   </body>
 </html>

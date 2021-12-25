@@ -1,1 +1,235 @@
+body {
+    margin: 0;
+}
+
+.bg-image{
+    background-image: url("./images/bg-day.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+/* header stuff */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #5B0A3C;
+}
+
+.logo-container {
+    flex:0;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.logo-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.logo {
+    width:60%;
+}
+
+.form {
+    flex:0;
+    display: flex;
+}
+
+.search {
+    background-color:#F49120;
+    border:none;
+    max-height: 12vw;
+}
+input {
+    border:none;
+    font-size: 1.2em;
+    padding: 5px;
+    width: 40vw;
+    background-color: rgba(0, 0, 0, 0.164);
+    color: #fff;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 1; /* Firefox */
+    border:none;
+  }
+
+.deactivated {
+    display:none;
+}
+
+.btn {
+    border:none;
+    width:5vw;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 1.2em;
+    background-color: #F49120;
+}
+
+/* today container */
+.today-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    color: #fff;
+    text-shadow:  2px 2px 0px rgb(0, 0, 0);
+}
+
+/* current temp */
+.current-temp{
+    padding-left: 15%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.location{
+    font-size: 2em;
+}
+
+.weather{
+    font-size: 1.5em;
+}
+
+.temp{
+    font-size: 4em;
+}
+
+.max-min-temp{
+    display:flex;
+    justify-content: space-between;
+    gap:5px;
+}
+
+/* todays forecast */
+.box{
+    width: 65%;
+    overflow-x: hidden;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f49120;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px grey;
+}
+
+.todays-forecast{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 105px;
+    padding: 30px;
+    border-top: 1px solid #000000;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.4em;
+}
+
+
+/* details container */
+.details-container {
+    background-color: #5b0a3cc4;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+}
+
+.top-details, .bottom-details {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-text{
+    font-size: 1.1em;
+    color: #F49120;
+    text-shadow:  0px 0px 1px rgb(0, 0, 0);
+    padding-bottom: 5px;
+}
+.details-item{
+    font-size: 1.3em;
+    color: rgba(255, 255, 255, 0.993);
+    text-shadow:  2px 2px 0px rgb(0, 0, 0);
+}
+
+
+/* forecast container */
+.forecast-container {
+    padding: 50px;
+    height: 500px;
+}
+
+table{
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    color: #F49120;
+    text-shadow:  0px 0px 3px rgb(0, 0, 0);
+    background-color: #5b0a3cc4;
+}
+
+td{
+    color: rgba(255, 255, 255, 0.993);
+    text-shadow:  2px 2px 0px rgb(0, 0, 0);
+}
+
+td, th {
+    font-size: 1.3em;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/* footer container */
+.footer-container{
+    height: 100px;
+    background-color: #5B0A3C;
+}
+
+
+
+
+
+
+
+
 
